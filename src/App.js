@@ -1,9 +1,8 @@
-function App() {
+import Home from "./components/Home";
+export default function App() {
   return (
     <div className="App">
-      <h1>Empty React App</h1>
+      <Home />
     </div>
   );
 }
-
-export default App;
