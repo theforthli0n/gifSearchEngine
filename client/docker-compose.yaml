@@ -1,0 +1,12 @@
+services:
+  gif-search-engine-client:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: gif-search-engine-client
+    ports:
+      - "4011:4011"
+    environment:
+      - PORT=4011
+    volumes:
+      - ./:/gif-search-engine-client
